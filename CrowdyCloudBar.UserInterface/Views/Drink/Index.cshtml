@@ -1,0 +1,19 @@
+﻿@model DrinkViewModel
+
+@{
+    ViewData["Title"] = "Drinks Overview";
+}
+
+<div class="row mx-1 bg-white shadow-sm justify-content-center align-items-center">
+    <div class="col-sm-9 mt-4">
+        <div class="text-center my-4">
+            <h2>@Model.CurrentCategory</h2>
+        </div>
+        <div class="row pb-3">
+            @foreach (Drink drink in Model.Drinks)
+            {
+                @await Html.PartialAsync("_DrinksSummaryPartial", drink)
+            }
+        </div>
+    </div>
+</div>

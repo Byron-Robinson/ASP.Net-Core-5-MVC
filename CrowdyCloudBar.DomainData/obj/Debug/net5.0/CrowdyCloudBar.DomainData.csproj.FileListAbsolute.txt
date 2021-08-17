@@ -1,0 +1,12 @@
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.DomainData\bin\Debug\net5.0\CrowdyCloudBar.DomainData.deps.json
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.DomainData\bin\Debug\net5.0\CrowdyCloudBar.DomainData.dll
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.DomainData\bin\Debug\net5.0\ref\CrowdyCloudBar.DomainData.dll
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.DomainData\bin\Debug\net5.0\CrowdyCloudBar.DomainData.pdb
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.DomainData\obj\Debug\net5.0\CrowdyCloudBar.DomainData.csproj.AssemblyReference.cache
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.DomainData\obj\Debug\net5.0\CrowdyCloudBar.DomainData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.DomainData\obj\Debug\net5.0\CrowdyCloudBar.DomainData.AssemblyInfoInputs.cache
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.DomainData\obj\Debug\net5.0\CrowdyCloudBar.DomainData.AssemblyInfo.cs
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.DomainData\obj\Debug\net5.0\CrowdyCloudBar.DomainData.csproj.CoreCompileInputs.cache
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.DomainData\obj\Debug\net5.0\CrowdyCloudBar.DomainData.dll
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.DomainData\obj\Debug\net5.0\ref\CrowdyCloudBar.DomainData.dll
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.DomainData\obj\Debug\net5.0\CrowdyCloudBar.DomainData.pdb

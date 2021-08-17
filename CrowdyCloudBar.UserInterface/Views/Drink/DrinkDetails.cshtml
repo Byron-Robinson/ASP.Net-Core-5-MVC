@@ -1,0 +1,25 @@
+﻿@model Drink
+
+@{
+    ViewData["Title"] = "Drink Details";
+}
+
+<div class="row mx-1 bg-white shadow-sm justify-content-center align-items-center">
+    <div class="col-sm-8 mt-4 pb-4">
+        <div class="card">
+            <div class="p-4">
+                <img src="@Model.ImageThumbnailUrl" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">@Model.Name</h5>
+                <p class="card-text">@Model.LongDescription</p>
+                <div class="col-12">
+                    <div class="btn-group float-end pb-4" role="group" aria-label="Button group with nested dropdown">
+                        <a class="btn btn-success me-2" asp-controller="ShoppingCart" asp-action="AddDrinkToShoppingCart" asp-route-drinkId="@Model.DrinkId">Add to cart</a>
+                        <a class="btn btn-outline-success-custom ms-1" asp-controller="Drink" asp-action="Index">Show all drinks</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

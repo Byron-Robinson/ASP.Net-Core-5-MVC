@@ -1,0 +1,175 @@
+﻿body, html {
+    font-family: 'Arial', 'MarkProBold','Century Gothic','sans-serif';
+    background-color: #f8f9fa !important;
+    color: gray;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 0px !important;
+    margin: 0px !important;
+    width: 100%;
+    height: 100%;
+}
+
+.card:hover {
+    box-shadow: 4px 4px 4px 0 lightgray;
+}
+
+.secondaryThemeColor {
+    color: #92db37 !important;
+    font-weight: 800;
+}
+
+.hoverColor:hover {
+    color: gray !important;
+    font-weight: 700;
+}
+
+
+.nav-link, .primaryThemeColor {
+    color: #006341;
+    font-weight: 600;
+}
+
+h2, #sessionspan {
+    color: #006341;
+    font-weight: 600;
+}
+
+#sessionspan {
+    color: #006341;
+}
+
+h5 > a, h5 {
+    color: #92db37;
+    font-weight: 700;
+}
+
+    h5 > a:hover {
+        color: #006341;
+    }
+
+h6 {
+    color: black;
+    font-weight: 700;
+}
+
+.h6-login {
+    color: lightgray;
+}
+
+    .h6-login > a {
+        color: #92db37;
+    }
+
+h4 {
+    color: darkgray;
+}
+
+.fa-shopping-cart {
+    color: lightgrey;
+    font-weight: 900;
+}
+
+
+.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler::selection {
+    border: none;
+    box-shadow: none;
+}
+
+
+.hoverColor:focus, .hoverColor:active, .hoverColor::selection {
+    color: gray !important;
+    font-weight: 700;
+}
+
+.btn-outline-success-custom:hover {
+    border-color: gray;
+    box-shadow: 2px 2px 2px 0 gray;
+    background-color: lightgray;
+    color: white;
+}
+
+.btn-outline-success:hover {
+    box-shadow: 2px 2px 2px 0 gray;
+}
+
+.btn-outline-success-custom {
+    border-radius: 0px;
+    transition: all 0.5s;
+    font-weight: 600;
+    color: white;
+    background-color: lightgray;
+    border: none;
+}
+
+.btn-success {
+    color: #ffffff;
+    outline: none !important;
+    border-radius: 0px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+    .btn-success:hover {
+        box-shadow: 2px 2px 2px 0 gray;
+    }
+
+.btnLogin {
+    min-width: 100px;
+}
+
+#btnOrderReturn {
+    padding-top: 5px;
+    padding-bottom: 6px;
+    min-width: 100px;
+}
+
+input.floatingInput:focus, input.floatingInput:active, input.floatingInput::selection,
+input#drinkInputSearch:focus, input#drinkInputSearch:active, input#drinkInputSearch::selection {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #92db37;
+}
+
+input.floatingInput, input#drinkInputSearch {
+    border-color: #92db37 !important;
+}
+
+.btn-outline-success-custom:focus, .btn-outline-success-custom:active, .btn-outline-success-custom::selection {
+    outline: none !important;
+    box-shadow: 2px 2px 2px 0 gray;
+}
+
+.modal-header {
+    border-bottom: none;
+    color: #006341;
+    display: block !important;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.modal-title {
+    font-weight: 800;
+}
+
+
+.table tbody tr:hover td {
+    background: #006341;
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+.table thead tr th {
+    color: #006341 !important;
+    font-weight: 700;
+}
+
+.table > thead > tr > th:first-child {
+    width: 15%;
+}
+
+.table > thead > tr > th:last-child {
+    width: 20%;
+}

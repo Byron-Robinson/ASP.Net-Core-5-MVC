@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CrowdyCloudBar.DomainData\CrowdyCloudBar.DomainData.csproj" />
+    <ProjectReference Include="..\CrowdyCloudBar.Repository\CrowdyCloudBar.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

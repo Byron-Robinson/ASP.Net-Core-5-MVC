@@ -1,0 +1,42 @@
+﻿@model LoginViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="row mx-1 bg-white shadow-sm justify-content-center align-items-center">
+    <div class="col-md-4">
+        <div class="text-center my-4">
+            <h2>CROWDY-CLOUD&trade; BAR</h2>
+            <h2>REGISTRATION</h2>
+        </div>
+        <h4 class="py-2">Create a new account</h4>
+        <form asp-controller="Account" asp-action="Register">
+            <input type="hidden" asp-for="ReturnUrl" />
+            <div class="form-floating mb-3">
+                <input class="form-control floatingInput" id="floatingInputGrid12" placeholder="User Name" asp-for="UserName" />
+                <label for="floatingInputGrid12" asp-for="UserName"></label>
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control floatingInput" id="regPassword" placeholder="Password" asp-for="Password" />
+                <label for="regPassword" asp-for="Password"></label>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            @if (!string.IsNullOrEmpty(ViewData.ModelState.Keys.FirstOrDefault(key => key.Equals("RegistrationError"))))
+            {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    @foreach (var modelError in Html.ViewData.ModelState.SelectMany(keyValuePair => keyValuePair.Value.Errors))
+                    {
+                        <div><span><i class="fas fa-exclamation-triangle fa-2x me-4"></i>@modelError.ErrorMessage</span></div>
+                    }
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            <div class="d-grid gap-2 d-md-block my-4 float-md-end">
+                <button id="btnRegSubmit" class="btn btn-success btnLogin" type="submit">REGISTER</button>
+            </div>
+        </form>
+
+    </div>
+</div>

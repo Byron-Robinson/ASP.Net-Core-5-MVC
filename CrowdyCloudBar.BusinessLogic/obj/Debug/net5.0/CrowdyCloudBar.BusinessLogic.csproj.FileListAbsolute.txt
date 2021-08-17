@@ -1,0 +1,17 @@
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.BusinessLogic\bin\Debug\net5.0\CrowdyCloudBar.BusinessLogic.deps.json
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.BusinessLogic\bin\Debug\net5.0\CrowdyCloudBar.BusinessLogic.dll
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.BusinessLogic\bin\Debug\net5.0\ref\CrowdyCloudBar.BusinessLogic.dll
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.BusinessLogic\bin\Debug\net5.0\CrowdyCloudBar.BusinessLogic.pdb
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.BusinessLogic\bin\Debug\net5.0\CrowdyCloudBar.DomainData.dll
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.BusinessLogic\bin\Debug\net5.0\CrowdyCloudBar.Repository.dll
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.BusinessLogic\bin\Debug\net5.0\CrowdyCloudBar.DomainData.pdb
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.BusinessLogic\bin\Debug\net5.0\CrowdyCloudBar.Repository.pdb
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.BusinessLogic\obj\Debug\net5.0\CrowdyCloudBar.BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.BusinessLogic\obj\Debug\net5.0\CrowdyCloudBar.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.BusinessLogic\obj\Debug\net5.0\CrowdyCloudBar.BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.BusinessLogic\obj\Debug\net5.0\CrowdyCloudBar.BusinessLogic.AssemblyInfo.cs
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.BusinessLogic\obj\Debug\net5.0\CrowdyCloudBar.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.BusinessLogic\obj\Debug\net5.0\CrowdyCloudBar.BusinessLogic.csproj.CopyComplete
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.BusinessLogic\obj\Debug\net5.0\CrowdyCloudBar.BusinessLogic.dll
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.BusinessLogic\obj\Debug\net5.0\ref\CrowdyCloudBar.BusinessLogic.dll
+C:\Users\byron\OneDrive\Desktop\Empired\CrowdyCloudBar\CrowdyCloudBar.BusinessLogic\obj\Debug\net5.0\CrowdyCloudBar.BusinessLogic.pdb

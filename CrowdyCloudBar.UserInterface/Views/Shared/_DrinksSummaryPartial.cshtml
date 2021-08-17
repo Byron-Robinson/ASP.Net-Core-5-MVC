@@ -1,0 +1,21 @@
+﻿@model Drink
+
+<div class="col-sm-4 my-2">
+    <div class="card">
+        <div class="p-2">
+            <img src="@Model.ImageThumbnailUrl" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+            <div class="col-sm-12 pb-1 d-sm-inline-flex">
+                <div class="col-sm-6">
+                    <h5 class="card-title"><a asp-controller="Drink" asp-action="DrinkDetails" asp-route-drinkId="@Model.DrinkId">@Model.Name</a></h5>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="float-sm-end">@Model.Price.ToString("c")</h6>
+                </div>
+            </div>
+            <p class="card-text">@Model.ShortDescription</p>
+            <a asp-controller="ShoppingCart" asp-action="AddDrinkToShoppingCart" asp-route-drinkId="@Model.DrinkId" class="btn btn-success float-end mt-sm-3">Add to cart</a>
+        </div>
+    </div>
+</div>

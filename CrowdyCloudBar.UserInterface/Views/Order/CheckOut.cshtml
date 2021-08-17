@@ -1,0 +1,75 @@
+﻿@model Order
+
+@{
+    ViewData["Title"] = "Shipping Details";
+}
+
+<div class="row mx-1 bg-white shadow-sm justify-content-center align-items-center">
+    <div class="col-md-4">
+        <div class="text-center my-4">
+            <h2>SHIPPING</h2>
+        </div>
+        <h4 class="py-2">Enter your shipping details below</h4>
+        <form asp-controller="Order" asp-action="Checkout">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control floatingInput" id="floatingInputGrid1" placeholder="First name" asp-for="FirstName" />
+                <label for="floatingInputGrid1" asp-for="FirstName">First Name</label>
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control floatingInput" id="floatingInputGrid2" placeholder="Surname" asp-for="LastName" />
+                <label for="floatingInputGrid2" asp-for="LastName">Surname</label>
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control floatingInput" id="floatingInputGrid3" placeholder="Address Line 1" asp-for="AddressLine1" />
+                <label for="floatingInputGrid3" asp-for="AddressLine1">Address Line 1</label>
+                <span asp-validation-for="AddressLine1" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control floatingInput" id="floatingInputGrid4" placeholder="Address Line 2" asp-for="AddressLine2" />
+                <label for="floatingInputGrid4" asp-for="AddressLine2">Address Line 2</label>
+                <span asp-validation-for="AddressLine2" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control floatingInput" id="floatingInputGrid5" placeholder="Postal Code" asp-for="PostalCode" />
+                <label for="floatingInputGrid5" asp-for="PostalCode">Postal Code</label>
+                <span asp-validation-for="PostalCode" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control floatingInput" id="floatingInputGrid6" placeholder="City" asp-for="City" />
+                <label for="floatingInputGrid6" asp-for="City">City</label>
+                <span asp-validation-for="City" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control floatingInput" id="floatingInputGrid7" placeholder="Country" asp-for="Country" />
+                <label for="floatingInputGrid7" asp-for="Country">Country</label>
+                <span asp-validation-for="Country" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control floatingInput" id="floatingInputGrid8" placeholder="Phone Number" asp-for="PhoneNumber" />
+                <label for="floatingInputGrid8" asp-for="PhoneNumber">Phone Number</label>
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control floatingInput" id="floatingInputGrid9" placeholder="Email" asp-for="Email" />
+                <label for="floatingInputGrid9" asp-for="Email">Email address</label>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            @if (!string.IsNullOrEmpty(ViewData.ModelState.Keys.FirstOrDefault(key => key.Equals("EmptyCart"))))
+            {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    @foreach (var modelError in Html.ViewData.ModelState.SelectMany(keyValuePair => keyValuePair.Value.Errors))
+                    {
+                        <div><span><i class="fas fa-exclamation-triangle fa-2x me-4"></i>@modelError.ErrorMessage</span></div>
+                    }
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            <div class="d-grid gap-2 d-md-block my-4 float-md-end">
+                <button class="btn btn-success" type="submit">Complete Order</button>
+                <a id="btnOrderReturn" class="btn btn-outline-success-custom ms-md-1" asp-controller="ShoppingCart" asp-action="Index">Return</a>
+            </div>
+        </form>
+    </div>
+</div>

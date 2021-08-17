@@ -1,0 +1,22 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <li class="nav-item">
+        <a class="nav-link secondaryThemeColor">welcome @User.Identity.Name</a>
+    </li>
+    <li class="nav-item">
+        <a id="btnLogout" class="nav-link hoverColor" asp-controller="Account" asp-action="Logout">LOGOUT</a>
+    </li>
+}
+else
+{
+    <li class="nav-item">
+        <a class="nav-link hoverColor" aria-current="page" asp-controller="Account" asp-action="Register">REGISTER</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link hoverColor" asp-controller="Account" asp-action="Login">LOGIN</a>
+    </li>
+}

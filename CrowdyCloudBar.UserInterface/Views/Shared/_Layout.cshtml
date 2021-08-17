@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header class=" bg-white m-3 p-2 shadow-sm">
+        <nav id="navbooze" class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand secondaryThemeColor me-md-4" asp-controller="Home" asp-action="Index"><strong>CROWDY-CLOUD&trade; BAR</strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="text-center"><i class="fas fa-bars fa-1x"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link hoverColor" aria-current="page" asp-controller="Home" asp-action="Index">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hoverColor" asp-controller="Contact" asp-action="Index">CONTACT US</a>
+                        </li>
+                        @await Component.InvokeAsync("CategoryMenu")
+                        @await Component.InvokeAsync("ShoppingCartSummary")
+                    </ul>
+                    <form class="d-flex me-md-4" asp-controller="Drink" asp-action="SearchDrink">
+                        <input class="form-control me-2" type="search" placeholder="Search for drink" aria-label="Search" id="drinkInputSearch" name="searchString" value="@ViewData["searchString"]">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <div class="d-flex ps-md-4">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            @await Html.PartialAsync("_LoginPartial")
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <div id="sessionrow" class="row mx-1 d-none">
+            <div class="text-md-end">
+                <span id="sessionspan">SESSION EXPIRY IN:</span><span class="timeout ps-1"></span>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">        
+         @RenderBody()       
+    </div>
+
+    <footer class="border-top footer text-muted m-3 py-3 py-2 bg-white shadow-sm">
+        <div class="container-fluid">
+            CROWDY-CLOUD&trade; BAR - <small>Powered by Robinson Inc.</small>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/twitter-bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+@await Html.PartialAsync("_SessionExpiryPartial")
